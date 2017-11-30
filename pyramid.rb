@@ -25,3 +25,6 @@ def row(char, index)
   (char + " ") * (index + 1) + "\n" 
 end
   
+puts build_pyramid(1, "$")  
+puts build_pyramid(4, "*")
+puts build_pyramid(10, "q")
