@@ -1,7 +1,7 @@
 require_relative('pyramid')
 require 'rspec'
 
-describe 'pyramid' do
+describe 'build_pyramid' do
   
   describe 'takes an integer and a string' do
     it 'returns a string' do
@@ -24,5 +24,16 @@ describe 'pyramid' do
       expect(row('%', 3)).to eq "% % % % \n"
     end
   end
+
+  describe 'error handling' do
+    it 'raises an error if num is not an integer' do
+      expect { build_pyramid('3', 'r') }. to raise_error ArgumentError
+    end
+
+    it 'raises an error if char is not a string' do
+
+    end
+  end
 end
+
 
