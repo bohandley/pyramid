@@ -1,7 +1,7 @@
 require_relative('pyramid')
 require 'rspec'
 
-describe '.pyramid' do
+describe 'pyramid' do
   
   describe 'takes an integer and a string' do
     it 'returns a string' do
@@ -13,4 +13,13 @@ describe '.pyramid' do
     end
   end
 
+  describe 'padding' do
+    it 'add num - index - 1 amount of spaces before the first char of each line' do
+      expect(padding(4, 2)).to eq ' '
+    end
+  end
+
+  describe '.row' do
+  end
 end
+
