@@ -19,7 +19,10 @@ describe 'pyramid' do
     end
   end
 
-  describe '.row' do
+  describe 'row' do
+    it 'creates a row with the charand a space multiplied by index + 1 + \n' do
+      expect(row('%', 3)).to eq "% % % % \n"
+    end
   end
 end
 
