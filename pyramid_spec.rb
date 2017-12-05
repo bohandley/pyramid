@@ -31,7 +31,7 @@ describe 'build_pyramid' do
     end
 
     it 'raises an error if char is not a string' do
-
+      expect { build_pyramid(3, 3) }. to raise_error ArgumentError
     end
   end
 end
